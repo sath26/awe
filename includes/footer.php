@@ -5,7 +5,6 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<!-- Icons -->
 <script src="js/feather.min.js"></script>
 <script>
     feather.replace()

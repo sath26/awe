@@ -1,3 +1,7 @@
+*{
+	margin:0;
+	padding:0;
+}
 body {
   font-size: .875rem;
 }
@@ -11,8 +15,9 @@ body {
 /*
  * Sidebar
  */
-
 .sidebar {
+  width: 15%;
+  background: #fafafa;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -42,7 +47,10 @@ body {
   font-weight: 500;
   color: #333;
 }
-
+.sidebar .nav-link:hover {
+  background:rgba(139, 139, 139, 0.1);
+  color: rgb(39, 54, 99);
+}
 .sidebar .nav-link .feather {
   margin-right: 4px;
   color: #999;
@@ -57,10 +65,6 @@ body {
   color: inherit;
 }
 
-.sidebar-heading {
-  font-size: .75rem;
-  text-transform: uppercase;
-}
 
 /*
  * Content
@@ -74,14 +78,13 @@ body {
  * Navbar
  */
 
-.navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, .25);
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-}
+/* .navbar-brand {
+  margin-right: 70%;
+} */
 
+.btn{
+  border-radius: 0px;
+}
 .navbar .form-control {
   padding: .75rem 1rem;
   border-width: 0;
@@ -97,4 +100,56 @@ body {
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.form-btn{
+  border-radius: 4px;
+}
+#login-form {
+	margin:10% auto;
+  max-width:500px;
+}
+/* home page */
+#wrapper{
+	padding-top:50px;
+}
+.mob-log-reg_btn{
+  display:none;
+}
+/* Media query */
+@media only screen and (max-width: 1470px) {
+  .sidebar{
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .sidebar{
+    width: 25%;
+  }
+  #login-form {
+    margin:13% auto;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .sidebar{
+    width: 35%;
+  }
+  #login-form {
+    margin:15% auto;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .sidebar{
+    width: 45%;
+  }
+ 
+}
+@media only screen and (max-width: 560px) {
+  .log-reg-btn{
+    display:none;
+  }
+  .mob-log-reg_btn{
+    display:block;
+  }
+ 
 }
